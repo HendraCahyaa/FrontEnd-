@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .konten {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .konten div {
+        background-color: cadetblue;
+        padding: 30px;
+        border: 1px solid black;
+        height: 100px;
+      }
+
+      @media (min-width: 481px) and (max-width: 768px) {
+        .konten {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (min-width: 769px) {
+        .konten {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="konten">
+      <div>Konten 1</div>
+      <div>Konten 2</div>
+      <div>Konten 3</div>
+      <div>Konten 4</div>
+    </div>
+  </body>
+</html>

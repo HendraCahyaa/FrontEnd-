@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #ecf2f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        font-family: "Barlow Semi Condensed", sans-serif;
+      }
+      .container {
+        width: 1115px;
+        height: 600px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .div-1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 860px;
+        gap: 30px;
+      }
+      .icon {
+        position: absolute;
+        top: 0;
+        right: 80px;
+        width: 110px;
+        z-index: 1;
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        line-height: 10px;
+        z-index: 2;
+      }
+      .text-1 {
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 10px;
+        position: relative;
+        z-index: 2;
+      }
+      .text-2 {
+        font-size: 13px;
+        color: #cfcfcf;
+        line-height: 18px;
+        padding-top: 10px;
+      }
+      .avatar {
+        width: 48px;
+        height: 48px;
+      }
+      .user-info {
+        font-size: 13px;
+      }
+      .box-1 {
+        width: 540px;
+
+        background-color: #733fc8;
+        color: #ffffff;
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      .box-2 {
+        width: 255px;
+
+        background-color: #48556a;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      .box-3 {
+        width: 255px;
+
+        background-color: #ffffff;
+        color: black;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      .box-4 {
+        width: 540px;
+
+        background-color: #19202d;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      .box-5 {
+        width: 255px;
+
+        background-color: #ffffff;
+        color: #48556a;
+        padding: 20px;
+        border-radius: 20px;
+      }
+      @media (max-width: 768px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr;
+          width: 327px;
+          gap: 20px;
+        }
+        .div-1 {
+          display: grid;
+          grid-template-columns: 1fr;
+          width: 327px;
+        }
+        .box-1 {
+          width: 327px;
+          height: 444px;
+        }
+        .icon {
+          right: 20px;
+        }
+        .box-2 {
+          width: 327px;
+          height: 240px;
+        }
+        .box-3 {
+          width: 327px;
+          height: 240px;
+        }
+        .box-4 {
+          width: 327px;
+          height: 444px;
+        }
+        .box-5 {
+          width: 327px;
+          height: 438px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div-1">
+        <div class="box-1">
+          <img src="gambar.png" alt="gambar" class="icon" />
+          <div class="profile">
+            <img src="gambar1.png" alt="gambar" class="avatar" />
+            <div class="user-info">
+              <p style="margin-bottom: 10px">Daniel Clifford</p>
+              <p style="color: #cfcfcf; margin-top: 0">Verified Graduate</p>
+            </div>
+          </div>
+          <p class="text-1">
+            I received a job offer mid-course, and the subjects I learned were
+            current, if not more so, in the company I joined. I honestly feel I
+            got every penny's worth.
+          </p>
+          <p class="text-2">
+            “ I was an EMT for many years before I joined the bootcamp. I've
+            been looking to make a transition and have heard some people who had
+            an amazing experience here. I signed up for the free intro course
+            and found it incredibly fun! I enrolled shortly thereafter. The next
+            12 weeks was the best - and most grueling - time of my life. Since
+            completing the course, I've successfully switched careers, working
+            as a Software Engineer at a VR startup. ”
+          </p>
+        </div>
+        <div class="box-2">
+          <div class="profile">
+            <img src="gambar2.png" alt="gambar" class="avatar" />
+            <div class="user-info">
+              <p style="margin-bottom: 10px">Jonathan Walters</p>
+              <p style="color: #cfcfcf; margin-top: 0">Verified Graduate</p>
+            </div>
+          </div>
+          <p class="text-1">
+            The team was very supportive and kept me motivated
+          </p>
+          <p class="text-2">
+            “ I started as a total newbie with virtually no coding skills. I now
+            work as a mobile engineer for a big company. This was one of the
+            best investments I've made in myself. “
+          </p>
+        </div>
+        <div class="box-3">
+          <div class="profile">
+            <img src="gambar3.png" alt="gambar" class="avatar" />
+            <div class="user-info">
+              <p style="margin-bottom: 10px">Jeanette Harmon</p>
+              <p style="color: #48556a; margin-top: 0">Verified Graduate</p>
+            </div>
+          </div>
+          <p class="text-1">An overall wonderful and rewarding experience</p>
+          <p class="text-2" style="color: #48556a">
+            “ Thank you for the wonderful experience! I now have a job I really
+            enjoy, and make a good living while doing something I love. ”
+          </p>
+        </div>
+        <div class="box-4">
+          <div class="profile">
+            <img src="gambar4.png" alt="gambar" class="avatar" />
+            <div class="user-info">
+              <p style="margin-bottom: 10px">Patrick Abrams</p>
+              <p style="color: #cfcfcf; margin-top: 0">Verified Graduate</p>
+            </div>
+          </div>
+          <p class="text-1">
+            Awesome teaching support from TAs who did the bootcamp themselves.
+            Getting guidance from them and learning from their experiences was
+            easy.
+          </p>
+          <p class="text-2" style="color: #cfcfcf">
+            “ The staff seem genuinely concerned about my progress which I find
+            really refreshing. The program gave me the confidence necessary to
+            be able to go out in the world and present myself as a capable
+            junior developer. The standard is above the rest. You will get the
+            personal attention you need from an incredible community of smart
+            and amazing people. ”
+          </p>
+        </div>
+      </div>
+      <div class="box-5">
+        <div class="profile">
+          <img src="gambar5.png" alt="gambar" class="avatar" />
+          <div class="user-info">
+            <p style="margin-bottom: 10px">Kira Whittle</p>
+            <p style="margin-top: 0">Verified Graduate</p>
+          </div>
+        </div>
+        <p class="text-1">
+          Such a life-changing experience. Highly recommended!
+        </p>
+        <p class="text-2" style="color: #48556a">
+          “ Before joining the bootcamp, I've never written a line of code. I
+          needed some structure from professionals who can help me learn
+          programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program.
+          The entire curriculum and staff did not disappoint. They were very
+          hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the
+          next level in a way that no tutorial could ever have. In fact, I've
+          often referred to it during interviews as an example of my developent
+          experience. It certainly helped me land a job as a full-stack
+          developer after receiving multiple offers. 100% recommend! ”
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

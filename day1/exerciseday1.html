@@ -15,11 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
     <style>
       * {
         margin: 0;
@@ -31,13 +26,16 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
+        background-color: #f2f2f2;
       }
       .container {
         width: 343px;
         border-radius: 10px;
         overflow: hidden;
+        background-color: #ffffff;
       }
       .img {
+        background: url(Bitmap.png);
         object-fit: cover;
         display: block;
         width: 343px;
@@ -116,14 +114,45 @@
         border: none;
         cursor: pointer;
       }
-      button:hover {
-        background-color: #245a45;
+      .cart {
+        width: 14px;
+        height: 16px;
+        margin-right: 8px;
+      }
+      @media (min-width: 769px) {
+        .container {
+          width: 600px;
+          height: 450px;
+          display: flex;
+          background-color: #ffffff;
+        }
+        .img {
+          width: 300px;
+          height: 450px;
+          background: url(Bitmap2.png);
+        }
+        .content {
+          width: 300px;
+        }
+        .overline {
+          padding-top: 10px;
+        }
+        .display {
+          padding-top: 16px;
+        }
+        .description {
+          padding-top: 12px;
+        }
+
+        .button {
+          padding-top: 20px;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <img class="img" src="Bitmap.png" alt="Bitmap" />
+      <div class="img"></div>
       <div class="content">
         <p class="overline">PERFUME</p>
         <p class="display">Gabrielle Essence Eau De Parfum</p>
@@ -135,9 +164,7 @@
           <p class="discount">$149.99</p>
           <p class="price-normal">$169.99</p>
         </div>
-        <button>
-          <i class="bi bi-cart3" style="padding-right: 10px"></i>add to cart
-        </button>
+        <button><img src="Cart.png" alt="" class="cart" />add to cart</button>
       </div>
     </div>
   </body>

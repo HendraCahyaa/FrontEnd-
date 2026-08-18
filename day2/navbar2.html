@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar 2</title>
+    <style>
+      .navbar {
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        border-radius: 50px;
+      }
+      .nav-item {
+        display: none;
+      }
+      .nav-button {
+        display: none;
+      }
+      .nav-menu {
+        display: block;
+      }
+      @media (min-width: 769px) {
+        .nav-item {
+          display: flex;
+          gap: 24px;
+        }
+        .nav-button {
+          background-color: black;
+          color: #fff;
+          padding-right: 16px;
+          padding-left: 16px;
+          padding-top: 8px;
+          padding-left: 8px;
+          border-radius: 50px;
+          display: block;
+        }
+        .nav-menu {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="nav-logo">Logo</h1>
+      <div class="nav-item">
+        <p>Work</p>
+        <p>Services</p>
+        <p>Pricing</p>
+        <p>Contact</p>
+      </div>
+      <button class="nav-button">Booking a call</button>
+      <button class="nav-menu">Menu</button>
+    </div>
+  </body>
+</html>
