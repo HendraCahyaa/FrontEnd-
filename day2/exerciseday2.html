@@ -74,7 +74,6 @@
       }
       .box-1 {
         width: 540px;
-
         background-color: #733fc8;
         color: #ffffff;
         position: relative;
@@ -84,7 +83,6 @@
       }
       .box-2 {
         width: 255px;
-
         background-color: #48556a;
         color: #ffffff;
         padding: 20px;
@@ -92,7 +90,6 @@
       }
       .box-3 {
         width: 255px;
-
         background-color: #ffffff;
         color: black;
         padding: 20px;
@@ -100,7 +97,6 @@
       }
       .box-4 {
         width: 540px;
-
         background-color: #19202d;
         color: #ffffff;
         padding: 20px;
@@ -108,7 +104,6 @@
       }
       .box-5 {
         width: 255px;
-
         background-color: #ffffff;
         color: #48556a;
         padding: 20px;
@@ -116,38 +111,21 @@
       }
       @media (max-width: 768px) {
         .container {
-          display: grid;
           grid-template-columns: 1fr;
-          width: 327px;
           gap: 20px;
         }
-        .div-1 {
-          display: grid;
-          grid-template-columns: 1fr;
-          width: 327px;
-        }
-        .box-1 {
-          width: 327px;
-          height: 444px;
-        }
+
         .icon {
           right: 20px;
         }
-        .box-2 {
-          width: 327px;
-          height: 240px;
-        }
-        .box-3 {
-          width: 327px;
-          height: 240px;
-        }
-        .box-4 {
-          width: 327px;
-          height: 444px;
-        }
+        .container,
+        .div-1,
+        .box-1,
+        .box-2,
+        .box-3,
+        .box-4,
         .box-5 {
-          width: 327px;
-          height: 438px;
+          width: 100%;
         }
       }
     </style>
