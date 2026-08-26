@@ -6,6 +6,11 @@ import { RouterProvider } from "react-router/dom";
 import UseStatePage from "./pages/UseStatePage";
 import UseEffectPage from "./pages/UseEffectPage";
 import UseMemoPage from "./pages/UseMemoPage";
+import UseRefPage from "./pages/UseRefPage";
+import UseReducerPage from "./pages/UseReducerPage";
+import UseCallbackPage from "./pages/UseCallbackPage";
+import UseCustomHookPage from "./pages/UseCustomHookPage";
+import CounterPage from "./pages/CounterPage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +28,26 @@ const router = createBrowserRouter([
   {
     path: "/use-memo",
     element: <UseMemoPage />,
+  },
+  {
+    path: "/use-ref",
+    element: <UseRefPage />,
+  },
+  {
+    path: "/use-reducer",
+    element: <UseReducerPage />,
+  },
+  {
+    path: "/use-callback",
+    element: <UseCallbackPage />,
+  },
+  {
+    path: "/use-costum",
+    element: <UseCustomHookPage />,
+  },
+  {
+    path: "/counter",
+    element: <CounterPage />,
   },
 ]);
 
