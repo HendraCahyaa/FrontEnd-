@@ -40,7 +40,7 @@ function Jumbotron() {
         </div>
       </div>
       <div className="bg-black text-white flex flex-col gap-6 md:gap-8 justify-start items-start px-6 md:pl-16 md:pr-32 py-8">
-        <p className="table mx-auto text-xl md:text-2xl tracking-[4px] font-semibold">
+        <p className="table mx-auto md:mx-0 text-xl md:text-2xl tracking-[4px] font-semibold">
           IT BERRIES
         </p>
         <p className="text-sm md:text-base leading-relaxed">
@@ -53,7 +53,7 @@ function Jumbotron() {
           varius turpis vel pharetra. Ut ante justo, consequat vitae elementum
           tempor, accumsan nec eros.
         </p>
-        <button className="table mx-auto border-2 border-black border-x-white px-8 py-2 hover:bg-white hover:text-black active:scale-95 transition-all duration-200">
+        <button className="table mx-auto md:mx-0 border-2 border-black border-x-white px-8 py-2 hover:bg-white hover:text-black active:scale-95 transition-all duration-200">
           Read More
         </button>
       </div>
