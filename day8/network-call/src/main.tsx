@@ -3,27 +3,21 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import "./index.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Counter1Page from "./pages/Counter1Page";
-import Counter2Page from "./pages/Counter2Page";
+import RegisterPage from "./pages/RegisterPage";
+import LoginPage from "./pages/LoginPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <div>hello</div>,
   },
   {
-    path: "/about",
-    element: <About />,
+    path: "/register",
+    element: <RegisterPage />,
   },
   {
-    path: "/counterpage",
-    element: <Counter1Page />,
-  },
-  {
-    path: "/counter2page",
-    element: <Counter2Page />,
+    path: "/login",
+    element: <LoginPage />,
   },
 ]);
 
