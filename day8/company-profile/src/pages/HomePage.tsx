@@ -1,59 +1,75 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { reasons, services, stats, testimonials } from "@/types/home";
+import { clients, reasons, services, stats, testimonials } from "@/types/home";
+import { useNavigate } from "react-router";
 
 function HomePage() {
+  const navigate = useNavigate();
   return (
     <div>
       <Navbar />
-      <div>
-        <div className="grid grid-cols-2 gap-20 bg-black text-white px-10 py-20">
+      <div className="mt-20">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-20 bg-[#06091a] text-white px-5 md:px-10 py-20">
           <div className="flex flex-col flex-wrap gap-8 pr-10">
-            <h1 className="text-6xl">
+            <h1 className="text-5xl md:text-6xl">
               Building Digital Experiences That Move Businesses Forward.
             </h1>
-            <p className="text-zinc-300 text-xl">
+            <p className="text-zinc-300 text-lg md:text-xl">
               NEXORA helps ambitious businesses transform ideas into powerful
               digital products through technology, design, and relentless
               innovation.
             </p>
-            <div className="flex gap-10 items-center font-semibold">
-              <a href="" className="px-6 py-4 bg-blue-600 rounded-xl ">
+            <div className="flex flex-col justify-start items-start md:flex-row gap-4 md:gap-10 md:items-center font-semibold">
+              <button
+                onClick={() => navigate("/services")}
+                className="flex items-center gap-4 px-6 py-4 bg-blue-600 rounded-xl hover:bg-blue-700 transition-all text-lg hover:scale-[1.02]"
+              >
                 Explore Our Services
-              </a>
-              <a
-                href=""
-                className="border-2 border-gray-800 px-6 py-4 rounded-xl"
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path
+                    d="M3 8h10M9 4l4 4-4 4"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </button>
+              <button
+                onClick={() => navigate("/about")}
+                className="border border-gray-700 px-6 py-4 rounded-xl  hover:border-gray-500"
               >
                 Talk to Us
-              </a>
+              </button>
             </div>
           </div>
-          <div className="flex justify-center rounded-xl overflow-hidden">
+          <div className="hidden md:flex justify-center rounded-2xl overflow-hidden">
             <img
               src="https://images.unsplash.com/photo-1551135049-8a33b5883817?w=700&h=500&fit=crop&auto=format"
               alt="Nexora team work"
               className="w-full h-120 object-cover"
             />
           </div>
-        </div>
-        <div>
+        </section>
+        <section>
           <div className="p-10 flex flex-col gap-8 justify-center items-center">
-            <h4 className="text-sm text-gray-400">
+            <h4 className="text-sm text-gray-500">
               TRUSTED BY GROWING BUSINESSES
             </h4>
-            <div className="flex gap-20 text-lg text-gray-300">
-              <span>Vertex</span>
-              <span>Lumina</span>
-              <span>Orbit</span>
-              <span>Altura</span>
-              <span>Nova Labs</span>
+            <div className="flex flex-wrap items-center justify-center gap-8 md:gap-20 text-lg text-gray-300 font-medium">
+              {clients.map((client, i) => (
+                <span key={i} className="hover:text-gray-500">
+                  {client}
+                </span>
+              ))}
             </div>
           </div>
           <hr className="border-zinc-300 py-4" />
-          <div className="grid grid-cols-2 gap-10 pt-20 pb-20 px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 pt-10 md:pt-20 pb-20 px-8">
             <div className="flex flex-col gap-8 pr-16">
-              <h2 className="text-4xl">Technology With Purpose.</h2>
+              <h2 className="text-3xl md:text-4xl font-normal md:font-medium">
+                Technology With Purpose.
+              </h2>
               <p className="text-lg text-gray-500">
                 We are a full-service digital technology company that partners
                 with ambitious organizations to build products that make a real
@@ -67,40 +83,56 @@ function HomePage() {
                 that matter.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 md:mx-20">
               {stats.map((stat, i) => (
                 <div
-                  className="bg-gray-50 rounded-xl px-12 flex flex-col justify-center "
+                  className="bg-gray-50 hover:bg-white hover:ring hover:ring-zinc-200  border-blue-500 rounded-xl px-12 py-6 gap-2 flex flex-col justify-center "
                   key={i}
                 >
-                  <span className="text-4xl">{stat.value}</span>
-                  <span className="text-gray-600">{stat.label}</span>
+                  <span className="text-3xl md:text-4xl">{stat.value}</span>
+                  <span className="text-gray-600 text-[14px] md:text-lg">
+                    {stat.label}
+                  </span>
                 </div>
               ))}
             </div>
           </div>
-        </div>
-        <div className="flex flex-col bg-blue-50 pt-10">
-          <h2 className="text-center text-4xl py-10">What We Do</h2>
-          <div className="grid grid-cols-4 gap-6 px-10 pb-20">
+        </section>
+        <section className="flex flex-col bg-zinc-50 pt-10">
+          <h2 className="text-center text-3xl md:text-4xl py-10 font-normal md:font-medium">
+            What We Do
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 px-10 pb-20">
             {services.map((service, i) => (
               <div
                 key={i}
-                className="bg-white rounded-2xl pb-4 pt-8 px-6 flex flex-col gap-4"
+                className="bg-white rounded-2xl pb-4 pt-8 px-6 flex flex-col gap-4 hover:ring hover:shadow-lg ring-blue-500 hover:-translate-y-1 transition-all group "
               >
-                <p className="bg-blue-50 w-fit p-4 rounded-xl text-blue-500">
+                <p className="bg-blue-50 w-fit p-4 rounded-xl text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
                   {service.icon}
                 </p>
                 <h4 className="text-lg">{service.name}</h4>
                 <p className="text-sm text-gray-600">{service.desc}</p>
-                <a href="" className="text-sm">
+                <button
+                  onClick={() => navigate("/services")}
+                  className="text-sm flex gap-1 items-center text-blue-600 font-bold hover:text-blue-700"
+                >
                   Lean More
-                </a>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path
+                      d="M2 7h10M8 3l4 4-4 4"
+                      stroke="currentColor"
+                      strokeWidth="1.3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </button>
               </div>
             ))}
           </div>
-        </div>
-        <div className="grid grid-cols-2 gap-16 px-10 py-20">
+        </section>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 px-10 py-20">
           <div>
             <div className="rounded-2xl overflow-hidden">
               <img
@@ -112,21 +144,22 @@ function HomePage() {
           </div>
           <div>
             <div className="flex flex-col gap-4">
-              <h2 className="text-5xl">A partner built for your ambition.</h2>
-              <p>
+              <h2 className="text-3xl md:text-5xl">
+                A partner built for your ambition.
+              </h2>
+              <p className="text-slate-600">
                 We go beyond execution — we think deeply about your business,
                 your users, and the technology that connects them.
               </p>
               <div className="space-y-6">
                 {reasons.map((reason, i) => (
                   <div key={i} className="flex gap-4">
-                    <div className="w-8 h-8 rounded-lg bg-electric-600 text-white flex items-center justify-center shrink-0 mt-0.5 ">
+                    <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 mt-0.5">
                       <svg
                         width="14"
                         height="14"
                         viewBox="0 0 14 14"
                         fill="none"
-                        className="text-white bg-blue-600 rounded-sm"
                       >
                         <path
                           d="M2 7l3.5 3.5L12 3"
@@ -150,14 +183,14 @@ function HomePage() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="p-10 bg-black text-white">
+        </section>
+        <section className="p-10 bg-[#06091a] text-white">
           <div>
-            <h2 className="text-4xl text-center py-8">
+            <h2 className="text-3xl md:text-[46px] text-center py-10 font-normal md:font-medium">
               Trusted by Growing Businesses
             </h2>
           </div>
-          <div className="flex flex-row pb-16 gap-8">
+          <div className="flex flex-col md:flex-row pb-16 gap-8">
             {testimonials.map((t, i) => (
               <div
                 key={i}
@@ -167,8 +200,8 @@ function HomePage() {
                   {[...Array(5)].map((_, j) => (
                     <svg
                       key={j}
-                      width="16"
-                      height="16"
+                      width="20"
+                      height="20"
                       viewBox="0 0 16 16"
                       fill="#f59e0b"
                     >
@@ -197,24 +230,33 @@ function HomePage() {
               </div>
             ))}
           </div>
-        </div>
-        <div className="bg-white pt-30 pb-20 px-10">
+        </section>
+        <section className="bg-white pt-30 pb-20 px-4 md:px-10">
           <div className="flex flex-col justify-center items-center gap-8">
-            <h1 className="text-6xl font-semibold">
+            <h1 className="text-4xl md:text-6xl font-semibold text-center">
               Have an idea worth building?
             </h1>
-            <p className="text-xl">
+            <p className="text-xl text-slate-600 text-center">
               Let's turn your vision into a digital product that makes an
               impact.
             </p>
-            <a
-              href=""
-              className="bg-black text-white px-10 py-4 font-semibold rounded-xl"
+            <button
+              onClick={() => navigate("/about")}
+              className="flex gap-4 items-center bg-black text-white  px-10 py-4 font-semibold rounded-xl hover:bg-gray-900 transition-all text-lg hover:scale-[1.02]"
             >
               Start a Conversation
-            </a>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <path
+                  d="M3 9h12M11 5l4 4-4 4"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </div>
-        </div>
+        </section>
       </div>
       <Footer />
     </div>
