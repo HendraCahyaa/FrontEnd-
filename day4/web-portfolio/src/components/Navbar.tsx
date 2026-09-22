@@ -43,8 +43,7 @@ function Navbar() {
 
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold font-display text-white rounded-lg transition-all duration-200 hover:opacity-90"
-          style={{ background: "#8b5cf6" }}
+          className="hidden md:inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-sm font-medium font-display text-white rounded-lg transition-all duration-200 hover:opacity-90"
         >
           Contact
         </a>
@@ -97,8 +96,7 @@ function Navbar() {
         <a
           href="#contact"
           onClick={() => setOpen(false)}
-          className="mt-2 py-2.5 text-sm font-semibold font-display text-white text-center rounded-lg"
-          style={{ background: "#8b5cf6" }}
+          className="mt-2 py-2.5 text-sm bg-blue-600 font-medium font-display text-white text-center rounded-lg"
         >
           Let's Talk
         </a>

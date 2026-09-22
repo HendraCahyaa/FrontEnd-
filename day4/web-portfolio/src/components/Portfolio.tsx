@@ -14,18 +14,18 @@ function Portfolio() {
       className=" text-[#f5f5f5] mx-auto max-w-6xl px-6 mt-10 font-display"
       id="portfolio"
     >
-      <div className="">
+      <div className="py-6">
         <h1 className=" text-4xl font-bold font-mono-label text-center">
           Portfolio
         </h1>
         <p className=" leading-relaxed text-xl font-display text-center text-gray-400 ">
-          Beberapa project yang telah saya kerjakan
+          Some projects I have worked on
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {project.map((project) => (
           <div
-            className="group overflow-hidden bg-[#111111] border-2 border-[#262626] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:border-violet-900/40 hover:shadow-lg hover:shadow-violet-500/5"
+            className="group overflow-hidden bg-[#111111] border border-[#262626] rounded-2xl transition-all duration-300 hover:-translate-y-1 hover:border-blue-900 hover:shadow-lg hover:shadow-blue-500/20"
             key={project.id}
           >
             <img
@@ -39,7 +39,7 @@ function Portfolio() {
               <div className="flex flex-row flex-wrap gap-4 py-4">
                 {project.tags.map((tag) => (
                   <span
-                    className="bg-[#111111] border-2 border-[#262626] px-4 py-1 rounded-lg text-[#a78bfa] text-sm font-mono-label transition-colors duration-200 hover:border-violet-500/50 hover:text-violet-300"
+                    className="bg-[#111111] border-2 border-[#262626] px-4 py-1 rounded-lg text-slate-200 text-sm font-mono-label transition-colors duration-200 hover:border-blue-500/50 hover:text-blue-300"
                     key={tag}
                   >
                     {tag}
@@ -55,10 +55,10 @@ function Portfolio() {
               <p className="text-zinc-400 text-[14px] py-2">{project.desc}</p>
 
               <Dialog>
-                <div className="flex flex-wrap justify-center md:justify-start gap-4 ">
+                <div className="flex flex-wrap justify-center md:justify-start gap-4 font-medium ">
                   <DialogTrigger
                     className={
-                      "bg-[#6746c8] text-sm  px-6 py-4 rounded-lg my-4 "
+                      "bg-blue-600 text-sm  px-6 py-4 rounded-lg my-4 "
                     }
                   >
                     View Case Study
@@ -81,7 +81,7 @@ function Portfolio() {
 
                 <DialogContent
                   className={
-                    "sm:max-w-3xl w-[90vw] h-[80vh] p-0 overflow-auto flex flex-col bg-[#09090B] border-zinc-800"
+                    "sm:max-w-3xl w-[90vw] h-[80vh] p-0  overflow-auto flex flex-col bg-[#09090B] border-zinc-800"
                   }
                 >
                   <div className="w-full h-1/3 relative bg-zinc-900 shrink-0">
@@ -95,7 +95,7 @@ function Portfolio() {
                     <div className="flex flex-row flex-wrap gap-4">
                       {project.tags.map((tag) => (
                         <span
-                          className="bg-[#111111] border-2 border-[#262626] px-4 rounded-lg text-[#a78bfa]"
+                          className="bg-[#111111] border-2 border-[#262626] px-4 rounded-lg text-slate-200"
                           key={tag}
                         >
                           {tag}
@@ -147,7 +147,7 @@ function Portfolio() {
                       <div className="flex gap-4">
                         <a
                           href="#home"
-                          className="flex gap-2 px-4 py-2 justify-center items-center bg-[#6746c8]  font-normal rounded-lg"
+                          className="flex gap-2 px-4 py-2 justify-center items-center bg-blue-600  font-normal rounded-lg"
                         >
                           <ExternalLinkIcon />
                           Live demo

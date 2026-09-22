@@ -19,24 +19,24 @@ function Hero() {
               Full-stack Web Developer
             </p>
             <p className="text-gray-300 text-lg leading-relaxed max-w-md">
-              Fresh graduate yang memiliki ketertarikan pada pengembangan
-              aplikasi web modern, khususnya pada frontend dan backend. Saya
-              senang membangun aplikasi yang sederhana, fungsional, dan mudah
-              digunakan.
+              A recent graduate with an interest in modern web application
+              development, particularly in frontend and backend technologies. I
+              enjoy building applications that are simple, functional, and
+              user-friendly.
             </p>
           </div>
           <div className="flex flex-wrap gap-4 mt-4">
             <a
               href="#portfolio"
-              className="inline-flex items-center px-6 py-3 font-display font-semibold text-white rounded-xl bg-violet-600 hover:bg-violet-500 hover:-translate-y-0.5 transition-all duration-200"
+              className="inline-flex items-center px-6 py-3 font-display font-semibold text-white rounded-xl bg-blue-600 hover:bg-blue-500 hover:-translate-y-0.5 transition-all duration-200"
             >
-              Lihat Portfolio
+              View Portfolio
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center px-6 py-3 font-display font-semibold text-white rounded-xl border-2 border-[rgba(255,255,255,0.12)] bg-[rgba(255,255,255,0.05)] hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-200"
+              className="inline-flex items-center px-6 py-3 font-display font-semibold text-white rounded-xl border border-[rgba(255,255,255,0.12)] bg-[rgba(255,255,255,0.05)] hover:bg-white/10 hover:-translate-y-0.5 transition-all duration-200"
             >
-              Kontak Saya
+              Contact me
             </a>
           </div>
 
@@ -55,7 +55,7 @@ function Hero() {
         </div>
 
         <div
-          className="w-full h-full flex justify-center order-1 rounded-2xl animate-fade-in"
+          className="w-full h-full flex justify-end pr-8 order-1 rounded-2xl animate-fade-in"
           style={{
             background:
               "radial-gradient(circle at center, rgba(139,92,246,0.28) 0%, transparent 70%)",

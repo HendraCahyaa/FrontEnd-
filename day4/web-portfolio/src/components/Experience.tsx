@@ -7,20 +7,20 @@ function Experience() {
           EXPERIENCE
         </h1>
         <p className=" leading-relaxed text-xl font-display text-gray-400 ">
-          Perjalanan belajar dan pengembangan saya
+          My learning and development journey
         </p>
       </div>
       <div className="flex flex-col gap-4 my-10">
         {jobs.map((job) => (
           <div
-            className="bg-[#111111] border-2 border-[#262626] rounded-2xl px-10 py-4 transition-all duration-300 hover:-translate-y-1 hover:border-violet-500/40"
+            className="bg-[#111111] border-2 border-[#262626] rounded-2xl px-10 py-4 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/40"
             key={job.company}
           >
             <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center">
               <p className="font-semibold text-xl text-[#f5f5f5]">
                 {job.title}
               </p>
-              <p className="bg-[#111111] border-2 border-[#262626] px-4 py-1 rounded-[20px] text-[#a78bfa] text-[12px] w-fit">
+              <p className="bg-[#111111] border-2 border-[#262626] px-4 py-1 rounded-[20px] text-slate-200 text-[12px] w-fit">
                 {job.period}
               </p>
             </div>
@@ -31,7 +31,7 @@ function Experience() {
             </div>
 
             <div className="px-4 leading-8 text-zinc-400">
-              <ul className="list-disc marker:text-purple-600">
+              <ul className="list-disc marker:text-blue-600">
                 {job.responsibilities.map((res) => (
                   <li key={res}>{res}</li>
                 ))}
@@ -41,7 +41,7 @@ function Experience() {
             <div className="flex flex-wrap gap-4 py-4 text-sm">
               {job.tech.map((t) => (
                 <span
-                  className="bg-[#111111] border-2 border-[#262626] px-4 py-1 rounded-lg text-[#a78bfa] transition-colors duration-200 hover:border-violet-500/50 hover:text-violet-300"
+                  className="bg-[#111111] border-2 border-[#262626] px-4 py-1 rounded-lg text-slate-200 transition-colors duration-200 hover:border-blue-500/50 hover:text-blue-100"
                   key={t}
                 >
                   {t}

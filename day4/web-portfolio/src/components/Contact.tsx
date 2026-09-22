@@ -16,7 +16,7 @@ function Contact() {
       <div className="pt-16 flex flex-col justify-center items-center text-center">
         <h1 className=" text-4xl font-bold font-mono-label">Contact</h1>
         <p className=" leading-relaxed text-xl font-display text-gray-400 ">
-          Mari terhubung dan berdiskusi
+          Let's connect and discuss.
         </p>
       </div>
       <div className="grid grid-cols-1 py-4 md:grid-cols-2 gap-4">
@@ -28,7 +28,7 @@ function Contact() {
             type="text"
             name="name"
             placeholder="ENTER YOUR NAME"
-            className="w-full border-2 border-[#262626] bg-[#0a0a0a] rounded-lg px-10 outline-none py-4 pl-3 pr-2 resize-y text-left transition-colors duration-200 focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30"
+            className="w-full border-2 border-[#262626] bg-[#0a0a0a] rounded-lg px-10 outline-none py-4 pl-3 pr-2 resize-y text-left transition-colors duration-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/30"
           />
           <label className="pt-4 text-zinc-400 font-mono-label tracking-widest">
             EMAIL
@@ -37,7 +37,7 @@ function Contact() {
             type="email"
             name="email"
             placeholder="ENTER YOUR EMAIL"
-            className="w-full border-2 border-[#262626] bg-[#0a0a0a] rounded-lg px-10 outline-none py-4 pl-3 pr-2 resize-y text-left transition-colors duration-200 focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30"
+            className="w-full border-2 border-[#262626] bg-[#0a0a0a] rounded-lg px-10 outline-none py-4 pl-3 pr-2 resize-y text-left transition-colors duration-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/30"
           />
           <label className="pt-4 text-zinc-400 font-mono-label tracking-widest">
             MESSAGE
@@ -45,11 +45,11 @@ function Contact() {
           <textarea
             name="message"
             placeholder="ENTER YOUR MESSAGE"
-            className="w-full border-2 border-[#262626] bg-[#0a0a0a] rounded-lg px-10 outline-none py-4 pl-3 pr-2 resize-y text-left transition-colors duration-200 focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30"
+            className="w-full border-2 border-[#262626] bg-[#0a0a0a] rounded-lg px-10 outline-none py-4 pl-3 pr-2 resize-y text-left transition-colors duration-200 focus:border-blue-500 focus:ring-1 focus:ring-blue-500/30"
           />
 
           <button
-            className="rounded-lg py-2 px-16 mb-4 font-bold text-lg bg-[#8c65ff] transition-all duration-200 hover:bg-violet-500 hover:-translate-y-0.5 active:translate-y-0"
+            className="rounded-lg py-2 my-2 px-16 mb-4 font-bold text-lg bg-blue-600 transition-all duration-200 hover:bg-blue-500 hover:-translate-y-0.5 active:translate-y-0"
             type="submit"
           >
             Send Message
@@ -59,9 +59,9 @@ function Contact() {
           <div className="bg-[#111111] border-2 border-[#262626] rounded-2xl px-10 py-4">
             <p className="text-lg py-4 text-[#f5f5f5]">Response</p>
             <p className="pb-4 text-sm text-[#a1a1aa]">
-              Jika kamu ingin berdiskusi mengenai project, kesempatan kerja,
-              atau sekadar bertukar informasi seputar web development, jangan
-              ragu untuk menghubungi saya.
+              If you would like to discuss projects, job opportunities, or
+              simply exchange information about web development, please don't
+              hesitate to contact me.
             </p>
           </div>
           <div className="bg-[#111111] border-2 border-[#262626] rounded-2xl px-10 py-4">
@@ -73,7 +73,7 @@ function Contact() {
                   href={s.href}
                   className="flex items-center gap-3 text-[#a1a1aa] hover:text-white transition-colors duration-200 group"
                 >
-                  <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-all duration-200 bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(255,255,255,0.08)] group-hover:bg-violet-500/10 group-hover:border-violet-500/30">
+                  <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 transition-all duration-200 bg-[rgba(255,255,255,0.05)] border-2 border-[rgba(255,255,255,0.08)] group-hover:bg-blue-500/10 group-hover:border-blue-500/30">
                     {s.icon}
                   </div>
                   <span className="text-sm font-medium truncate">
