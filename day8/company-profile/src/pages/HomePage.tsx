@@ -86,7 +86,7 @@ function HomePage() {
             <div className="grid grid-cols-2 gap-4 md:mx-20">
               {stats.map((stat, i) => (
                 <div
-                  className="bg-gray-50 hover:bg-white hover:ring hover:ring-zinc-200  border-blue-500 rounded-xl px-12 py-6 gap-2 flex flex-col justify-center "
+                  className="bg-gray-50 hover:bg-white hover:ring hover:ring-zinc-200  border-blue-500 rounded-xl px-10 md:px-12 py-6 gap-2 flex flex-col justify-center "
                   key={i}
                 >
                   <span className="text-3xl md:text-4xl">{stat.value}</span>

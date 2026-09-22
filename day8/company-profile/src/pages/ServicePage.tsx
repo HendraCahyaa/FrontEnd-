@@ -19,7 +19,7 @@ function ServicePage() {
             engineering together to deliver products that perform.
           </p>
         </section>
-        <section className="px-10 py-20 ">
+        <section className="px-6 md:px-10 py-20 ">
           {services.map((s, i) => (
             <div
               key={s.name}
@@ -47,28 +47,28 @@ function ServicePage() {
                   </svg>
                 </button>
               </div>
-              <div className="grid grid-cols-2 px-12 py-4 rounded-2xl bg-gray-50">
-                <div className="flex flex-col gap-4">
+              <div className="grid grid-cols-2 gap-4 md:gap-2 px-4 md:px-12 py-4 rounded-2xl bg-gray-50">
+                <div className="flex flex-col flex-wrap gap-4 ">
                   <span className="text-sm tracking-wide">KEY FEATURE</span>
-                  {s.features.map((feature) => (
-                    <ul
-                      key={feature}
-                      className="list-disc marker:text-blue-600 marker:text-2xl text-sm text-gray-700"
-                    >
-                      <li className="">{feature}</li>
-                    </ul>
-                  ))}
+                  <ul className="space-y-2.5 text-sm text-gray-700">
+                    {s.features.map((feature) => (
+                      <li key={feature} className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col flex-wrap gap-4">
                   <span className="text-sm tracking-wide">DELIVERABLES</span>
-                  {s.deliverables.map((del) => (
-                    <ul
-                      key={del}
-                      className="list-disc marker:text-blue-400 marker:text-2xl text-sm text-gray-700"
-                    >
-                      <li>{del}</li>
-                    </ul>
-                  ))}
+                  <ul className="space-y-2.5 text-sm text-gray-700">
+                    {s.deliverables.map((del) => (
+                      <li key={del} className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0" />
+                        {del}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </div>
