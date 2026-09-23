@@ -55,7 +55,7 @@ function Hero() {
         </div>
 
         <div
-          className="w-full h-full flex justify-end pr-8 order-1 rounded-2xl animate-fade-in"
+          className="w-full h-full flex justify-end p-6 md:pr-8 order-1 rounded-2xl animate-fade-in"
           style={{
             background:
               "radial-gradient(circle at center, rgba(139,92,246,0.28) 0%, transparent 70%)",
@@ -64,7 +64,7 @@ function Hero() {
         >
           <div className=" overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 md:w-75 md:order-2 order-1">
             <img
-              src="/profildummy.png"
+              src="/profile_portfolio.jpeg"
               alt="Hendra Cahya"
               fetchPriority="high"
               decoding="async"
