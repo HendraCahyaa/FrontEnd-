@@ -12,6 +12,7 @@ const navLinks: { label: string; page: Page }[] = [
 ];
 function Navbar() {
   const { user, logout } = useLoginStore();
+  const [mobileOpen, setMobileOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -19,7 +20,6 @@ function Navbar() {
     navigate("/login");
   };
 
-  const [mobileOpen, setMobileOpen] = useState(false);
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-100">
       <div className="px-6 md:py-2 mx-auto">

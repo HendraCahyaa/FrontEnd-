@@ -200,7 +200,6 @@ function CreateBlogPage() {
         <div className="min-h-[70vh] flex items-center justify-center px-6">
           <div className="w-full max-w-md text-center">
             <div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
-              {/* Icon */}
               <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-blue-50 flex items-center justify-center">
                 <svg
                   width="28"
@@ -216,7 +215,6 @@ function CreateBlogPage() {
                 </svg>
               </div>
 
-              {/* Text */}
               <h1 className="text-2xl font-semibold text-slate-900 mb-3">
                 Login Required
               </h1>
@@ -225,8 +223,6 @@ function CreateBlogPage() {
                 You need to be logged in before you can create and publish an
                 article on the NEXORA blog.
               </p>
-
-              {/* Actions */}
               <div className="flex flex-col sm:flex-row gap-3">
                 <button
                   onClick={() => navigate("/login")}
