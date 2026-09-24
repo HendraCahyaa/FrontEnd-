@@ -11,6 +11,7 @@ import LoginPage from "./pages/LoginPage";
 import ServicePage from "./pages/ServicePage";
 import TeamPage from "./pages/TeamPage";
 import ScrollToTop from "./components/ScrollTop";
+import BlogContent from "./pages/BlogContent";
 
 function RootLayout() {
   return (
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/create-blogs",
         element: <CreateBlogPage />,
+      },
+      {
+        path: "/blogs/:id",
+        element: <BlogContent />,
       },
     ],
   },

@@ -206,7 +206,10 @@ function BlogPage() {
                         </div>
                       </div>
                     </div>
-                    <button className="text-blue-600 text-xs font-semibold hover:text-blue-700 inline-flex items-center gap-1">
+                    <button
+                      onClick={() => navigate(`/blogs/${a.objectId}`)}
+                      className="text-blue-600 text-xs font-semibold hover:text-blue-700 inline-flex items-center gap-1"
+                    >
                       Read
                       <svg
                         width="12"
